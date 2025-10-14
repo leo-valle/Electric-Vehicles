@@ -1,14 +1,11 @@
-%% Seleção por roleta ACO
+%% SeleÃ§Ã£o por roleta ACO
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o realiza a seleÃ§ao do caminho para as formigas.
 
-% A função realiza a seleçao do caminho para as formigas.
-
-% Entradas da função
+% Entradas da funÃ§Ã£o
 % p - A probabilidade para a roleta dos caminhos a serem seguidos.
 
-% Saídas da função
+% SaÃ­das da funÃ§Ã£o
 % j - o caminho a ser seguido pela formiga.
 
 %% inicio
@@ -31,5 +28,6 @@ nn=nn+1;
 % if nn>1 && j(nn)==j(nn-1) && j(nn)~=tin
 %     j(nn)=j(nn-1)-1;
 % end
+
 
 end
