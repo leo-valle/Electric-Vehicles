@@ -1,14 +1,11 @@
 %% Plotar histogramas
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o realiza o plot dos resultados em histograma.
 
-% A função realiza o plot dos resultados em histograma.
+% Entradas da funÃ§Ã£o
+% result- valores medios encontrados da otimizaÃ§Ã£o
 
-% Entradas da função
-% result- valores medios encontrados da otimização
-
-% Saídas da função
+% SaÃ­das da funÃ§Ã£o
 % h - Histograma com os resultados obtidos
 
 %% inicio
@@ -27,9 +24,10 @@ hold on
 % sigma = std(x);
 % f = exp(-(y-mu).^2./(2*sigma^2))./(sigma*sqrt(2*pi));
 % plot(y,f,'LineWidth',1.5)
-title(['PAR de ' num2str(it) ' interaçoes']);
-xlabel(['PAR de ' num2str(it) ' interaçoes']);
+title(['PAR de ' num2str(it) ' interaÃ§oes']);
+xlabel(['PAR de ' num2str(it) ' interaÃ§oes']);
 ylabel('Frequencia');
 grid on;
 
 end
+
