@@ -1,22 +1,19 @@
 %% ACO
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Universidade Federal de Ouro Preto
-% Matricula: 15.1.8166
 
-% A função realiza a otimização pelo algoritmo colonia de formigas.
+% A funÃ§Ã£o realiza a otimizaÃ§Ã£o pelo algoritmo colonia de formigas.
 
-% Entradas da função
+% Entradas da funÃ§Ã£o
 % n_pop - numero de individuos.
 % n_var - numero de variaveis.
-% FSM - matriz de soluções factiveis.
+% FSM - matriz de soluÃ§Ãµes factiveis.
 % Smax - curva de potencia do estacionamento.
 % T - tempo total.
 % tin - tempo de entrada de um veiculo.
 % tout - tempo de saida de um veiculo.
 
-% Saídas da função
-% output.pop - retorna a população.
-% output.Bestsol - retorna o a melhor soluçao.
+% SaÃ­das da funÃ§Ã£o
+% output.pop - retorna a populaÃ§Ã£o.
+% output.Bestsol - retorna o a melhor soluÃ§ao.
 % output.BestCosts - retorna o melhor valor.
 % out.Stotal - Potencia do estacionamento + potencia dos veiculos.
 
@@ -34,17 +31,17 @@ tout = param_prob.tout;
 
 % ACO Parameters
 
-MaxIt = param.MaxIt;               % Numero maximo de interaçoes
+MaxIt = param.MaxIt;               % Numero maximo de interaÃ§oes
 nAnt = param.n_pop;        % Numero de formigas
-Q = 1;                     % Constante de atualização do feromonio
+Q = 1;                     % Constante de atualizaÃ§Ã£o do feromonio
 
 alpha = 1;                 % Phromone Exponential Weight
 beta = 5;                  % Heuristic Exponential Weight
 
-rho = 0.02;                % Taxa de evaporaçã
+rho = 0.02;                % Taxa de evaporaÃ§Ã£
 
-%% matriz tau deve ser uma só para todas as formigas, pois é nela que as formigas
-%% trocam insformações
+%% matriz tau deve ser uma sÃ³ para todas as formigas, pois Ã© nela que as formigas
+%% trocam insformaÃ§Ãµes
 tau = zeros(n_var,T);       % Matriz de feromonios -- alterada
 eta = zeros(n_var,T);       % -----alterada
 
@@ -65,7 +62,7 @@ BestSol.Cost = inf;
 
 %% formigueiro inicial
 for k=1:nAnt
-    for i = 1:n_var    % este é o número de VEs
+    for i = 1:n_var    % este Ã© o nÃºmero de VEs
         ant(k).Tour(i,:) = fsm{i,:}(randi([1 nAnt]),:);  %  -- alterado
     end
     [ant(k).Cost, Stotal(k,:)] = FO_caso_B(ant(k).Tour, param);
@@ -128,7 +125,7 @@ count = 0;
 for it=1:MaxIt
     % Move Ants
     for k=1:nAnt
-        for i = 1:n_var    % este é o número de VEs
+        for i = 1:n_var    % este Ã© o nÃºmero de VEs
             
             pos_ones=find(or(ant(k).Tour(i,:)==1,ant(k).Tour(i,:)==-1));
             % encontrando posicao dos periodos de carga/descarga
@@ -136,7 +133,7 @@ for it=1:MaxIt
             num_per=length(pos_ones);
             % numero de periodos de carga/descarga
             if num_per~=0
-                % estes tempos sao aleatórios, entao deveria ser individuais para cada VE, ou seja (tin(i), tout(i)
+                % estes tempos sao aleatÃ³rios, entao deveria ser individuais para cada VE, ou seja (tin(i), tout(i)
                 P=tau(i,:).^alpha.*eta(i,:).^beta;
                 P(pos_ones)=0;     % nao visitar posicoes existentes
                 P(1:tin-1)=0;      % nao visitar posicoes fora do intervalo factivel
@@ -212,3 +209,4 @@ output.eta = eta;
 
 
 end
+
