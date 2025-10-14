@@ -1,24 +1,21 @@
 %% FSM
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
-
 % A constroi a matriz FSM.
 
-% Entradas da função
-% Ereq - É a energia requerida pelo veiculo.
+% Entradas da funÃ§Ã£o
+% Ereq - Ã‰ a energia requerida pelo veiculo.
 % estrategia_car - variavel para definir qual a necessidade do veiculo.
 % tin - tempo de entrada.
 % tout - tempo de saida.
 % SOCa - state of charge A
 % Bc - capacidade da bateria
 % T - tempo total
-% n_pop - tamanho da população
+% n_pop - tamanho da populaÃ§Ã£o
 % N - numero de veiculos no estacionamento
 
-% Saídas da função
-% m_fsm.FSM - matriz de soluções factiveis.
-% m_fsm.aux - matriz de soluções factiveis em formato de celulas.
+% SaÃ­das da funÃ§Ã£o
+% m_fsm.FSM - matriz de soluÃ§Ãµes factiveis.
+% m_fsm.aux - matriz de soluÃ§Ãµes factiveis em formato de celulas.
 
 %% inicio
 
@@ -121,5 +118,6 @@ end
 
 m_fsm.aux = aux2;
 m_fsm.FSM = cell2mat(aux2);
+
 
 end
