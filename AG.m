@@ -1,20 +1,16 @@
 %% AG
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Universidade Federal de Ouro Preto
-% Matricula: 15.1.8166
+% A funÃ§Ã£o realiza a otimizaÃ§Ã£o pelo algoritmo genetico.
 
-% A função realiza a otimização pelo algoritmo genetico.
-
-% Entradas da função
+% Entradas da funÃ§Ã£o
 % n_pop - numero de individuos.
 % n_var - numero de carros.
-% FSM - matriz de soluções factiveis.
+% FSM - matriz de soluÃ§Ãµes factiveis.
 % Smax - curva de potencia do estacionamento.
 
-% Saídas da função
-% out.pop - retorna a população.
-% out.Bestsol - retorna o a melhor soluçao.
+% SaÃ­das da funÃ§Ã£o
+% out.pop - retorna a populaÃ§Ã£o.
+% out.Bestsol - retorna o a melhor soluÃ§ao.
 % out.BestCosts - retorna o melhor valor.
 % out.Stotal - Potencia do estacionamento + potencia dos veiculos.
 
@@ -28,11 +24,11 @@ n_var = param.N;
 Smax = param.Smax;
 
 % parametros do AG
-MaxIt = param.MaxIt;        % Numero maximo de interaçoes
+MaxIt = param.MaxIt;        % Numero maximo de interaÃ§oes
 beta = 1;
 pC = 1;                     % Porcentagem de filhos
 nC = round(pC*n_pop/2)*2;   % Numero de filhos
-mu = 0.02;                  % Taxa de mutação
+mu = 0.02;                  % Taxa de mutaÃ§Ã£o
 
 % Template for Empty Individuals
 empty_individual.Position = [];
@@ -133,3 +129,4 @@ out.bestcost = bestcost;
 out.Stotal = bestStotal;
 
 end
+
