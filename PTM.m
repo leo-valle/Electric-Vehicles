@@ -1,11 +1,8 @@
 %% Power Transaction Model
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o faz os calculos das equaÃ§Ãµes de Power transaction do paper 2.
 
-% A função faz os calculos das equações de Power transaction do paper 2.
-
-% Entradas da função
+% Entradas da funÃ§Ã£o
 % N - numero de veiculos
 % T - tempo de um dia 24 horas
 % Cn - capacidade da bateria
@@ -19,7 +16,7 @@
 % destino final
 % tpi - tempo de entrada do veiculo no estacionameto
 
-% Saídas da função
+% SaÃ­das da funÃ§Ã£o
 % ADPTV -  average daily power transaction variation, curva media de
 % potencia de um dia para os veiculos
 
@@ -75,3 +72,4 @@ for i =1:N
 end
 
 end
+
