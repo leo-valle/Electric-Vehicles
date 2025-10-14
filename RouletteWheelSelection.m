@@ -1,14 +1,11 @@
-%% Seleção por roleta AG
+%% SeleÃ§Ã£o por roleta AG
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o realiza a seleÃ§ao por meio de roleta dos cromossomos que serrao considerados pais para o AG.
 
-% A função realiza a seleçao por meio de roleta dos cromossomos que serrao considerados pais para o AG.
-
-% Entradas da função
+% Entradas da funÃ§Ã£o
 % p - A probabilidade para a roleta dos cromossomos.
 
-% Saídas da função
+% SaÃ­das da funÃ§Ã£o
 % i - o numero do cromossomo selecionado como pai.
 
 %% inicio
@@ -18,5 +15,6 @@ function i = RouletteWheelSelection(p)
 r = rand*sum(p);
 c = cumsum(p);
 i = find(r <= c, 1, 'first');
+
 
 end
