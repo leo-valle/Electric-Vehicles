@@ -1,18 +1,15 @@
 %% Parametros Probabilisticos
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o realiza analise probabilistica com parametros do problema.
 
-% A função realiza analise probabilistica com parametros do problema.
-
-% Entradas da função
+% Entradas da funÃ§Ã£o
 % tin_medio - tempo de entrada medio no estacionamento
 % tout_medio - tempo de saida medio do estacionamento
 % D_medio - distancial total media percorrida
 % N - numero de veiculos
 % SC - numero de casos estocasticos por veiculo
 
-% Saídas da função
+% SaÃ­das da funÃ§Ã£o
 % tin - tempo de entrada do veiculo no estacionamento
 % tout -  tempo de saida do veiculo do estacionamento
 % d - distancia da viagem da casa para o estacionamento
@@ -128,3 +125,4 @@ end
 %             break;
 %         end
 %     end
+
