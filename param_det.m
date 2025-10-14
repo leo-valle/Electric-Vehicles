@@ -1,15 +1,12 @@
 %% Parametros Probabilisticos
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o dÃ¡ valores para os parametros do problema de forma a controlar veiculos carregando e descarregando.
 
-% A função dá valores para os parametros do problema de forma a controlar veiculos carregando e descarregando.
-
-% Entradas da função
+% Entradas da funÃ§Ã£o
 
 % N - numero de veiculos
 
-% Saídas da função
+% SaÃ­das da funÃ§Ã£o
 % tin - tempo de entrada do veiculo no estacionamento
 % tout -  tempo de saida do veiculo do estacionamento
 % d - distancia da viagem da casa para o estacionamento
@@ -49,4 +46,5 @@ for i = 1:SC
 end
 
 end
+
 
