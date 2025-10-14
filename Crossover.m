@@ -1,17 +1,14 @@
 %% Cruzamento
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o realiza o cruzamento de dois cromossomos para o AG.
 
-% A função realiza o cruzamento de dois cromossomos para o AG.
-
-% Entradas da função
+% Entradas da funÃ§Ã£o
 % x1 - cromossomo considerado pai 1.
 % x2 - cromossomo considerado pai 2.
 % n_var - numero de variaveis.
 % T - tempo total
 
-% Saídas da função
+% SaÃ­das da funÃ§Ã£o
 % y1 - cromossomo considerado como filho 1.
 % y2 - cromossomo considerado como filho 2.
 
@@ -51,5 +48,6 @@ elseif  alpha > beta
     end
     
 end
+
 
 end
