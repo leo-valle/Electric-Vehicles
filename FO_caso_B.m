@@ -1,17 +1,14 @@
 %% FO_caso_B
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
-
-% A função realiza o calculo do custo da função objetivo para a estrategia B 
+% A funÃ§Ã£o realiza o calculo do custo da funÃ§Ã£o objetivo para a estrategia B 
 % do problema de VEs, a qual tende a minimizar o pico da curva de carga.
 
-% Entradas da função
-% Cromossomo - matrizes com soluçoes para o problema
-% Smax (potência aparente) - Potencia aparente do local.
+% Entradas da funÃ§Ã£o
+% Cromossomo - matrizes com soluÃ§oes para o problema
+% Smax (potÃªncia aparente) - Potencia aparente do local.
 
-% Saídas da função
-% output.PAR - É o minimo calculado para a função objetivo.
+% SaÃ­das da funÃ§Ã£o
+% output.PAR - Ã‰ o minimo calculado para a funÃ§Ã£o objetivo.
 % output.Stotal - Potencia aparente do local + potencia aparente dos veiculos.
 
 %% inicio
@@ -23,5 +20,6 @@ T = param.T;
 Stotal = (sum(cromossomo)*rPEV)+Smax;
 
 PAR = max(Stotal)/(sum(Stotal)/T);
+
 
 end
