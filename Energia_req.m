@@ -1,19 +1,16 @@
 %% Energia_req
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o realiza o calculo da energia requerida pelo veiculo.
 
-% A função realiza o calculo da energia requerida pelo veiculo.
-
-% Entradas da função
+% Entradas da funÃ§Ã£o
 % N - quantidade de veiculos no estacionamento
 % d - primeira distancia percorrida, da casa ate o estacionamento.
 % Bc - capacidade da bateria
 % dR - autonomia da bateria.
 % STD - distancia da viagem do veiculo do estacionamento ate em casa
 
-% Saídas da função
-% output.Ereq - É a energia requerida pelo veiculo.
+% SaÃ­das da funÃ§Ã£o
+% output.Ereq - Ã‰ a energia requerida pelo veiculo.
 % output.estrategia_car - variavel para definir qual a necessidade do
 % veiculo, carregar, descarregar ou inerte.
 % output.SOCa - SOCa.
@@ -64,3 +61,4 @@ output.Ereq = Ereq;
 output.SOCa = SOCa;
 
 end
+
