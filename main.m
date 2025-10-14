@@ -1,8 +1,5 @@
 %% Trabalho conclusao de curso
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
-
 %% inicio
 
 clc;
@@ -17,8 +14,8 @@ parametros.dR = 100;                     % autonomia da bateria
 parametros.Bc = 24e3;                    % capacidade da bateria
 
 parametros.N = 100;                      % numero de VEs
-parametros.n_pop = 100;                  % populaçao
-parametros.MaxIt = 300;                  % numero de iteraçoes
+parametros.n_pop = 100;                  % populaÃ§ao
+parametros.MaxIt = 300;                  % numero de iteraÃ§oes
 
 % Parametros probabilisticos
 
@@ -41,12 +38,12 @@ parametros.Smax = [0.7 0.75 0.78 0.80 0.79 0.84 0.87 0.89 0.90 0.91 0.86 0.91 0.
 % curva de teste 4 (curva achatada)
 % parametros.Smax = [0.72 0.76 0.75 0.70 0.77 0.7 0.75 0.75 0.74 0.76 0.76 0.74 0.73 0.79 0.77 0.76 0.70 0.77 0.73 0.79 0.75 0.71 0.77 0.70]*1000e3;
 
-it = 300;      % numero de iterações
+it = 300;      % numero de iteraÃ§Ãµes
 
 for i = 1:it
     
     disp([' ']);
-    disp(['Repetição ' num2str(i)]);
+    disp(['RepetiÃ§Ã£o ' num2str(i)]);
     
     %% Analise  Probabilistica
     
@@ -113,7 +110,7 @@ end
 %
 % % figure;
 % % plot(x,parametros.Smax,'b',x,output.Stotal,'r');
-% % legend('S inicial','S ultima geração')
+% % legend('S inicial','S ultima geraÃ§Ã£o')
 % % xlabel('Tempo');
 % % ylabel('Potencia');
 % % title('Curva de potencia');
@@ -176,4 +173,5 @@ end
 % legend('tout')
 % xlabel('tempo de entrada (hrs)');
 % ylabel('');
+
 % grid on;
