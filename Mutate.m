@@ -1,17 +1,14 @@
-%% Mutação
+%% MutaÃ§Ã£o
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o realiza a operaÃ§ao de mutaÃ§Ã£o do AG.
 
-% A função realiza a operaçao de mutação do AG.
+% Entradas da funÃ§Ã£o
+% x - cromossomo que sofrera a mutaÃ§ao.
+% mu - taxa de mutaÃ§Ã£o utilizada
+% FSM - matriz de soluÃ§oes possiveis
 
-% Entradas da função
-% x - cromossomo que sofrera a mutaçao.
-% mu - taxa de mutação utilizada
-% FSM - matriz de soluçoes possiveis
-
-% Saídas da função
-% y - cromossomo apos o processo de mutaçao
+% SaÃ­das da funÃ§Ã£o
+% y - cromossomo apos o processo de mutaÃ§ao
 
 %% inicio
 function y = Mutate(x, mu, FSM)
@@ -32,4 +29,5 @@ if flag == true
 end
 
 end
+
 end
