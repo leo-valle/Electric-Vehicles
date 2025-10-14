@@ -1,15 +1,12 @@
-%% Seleção
+%% SeleÃ§Ã£o
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
+% A funÃ§Ã£o realiza a seleÃ§ao dos melhores cromossomos para o AG.
 
-% A função realiza a seleçao dos melhores cromossomos para o AG.
+% Entradas da funÃ§Ã£o
+% pop - A populaÃ§ao de cromossomos com pais e filhos.
 
-% Entradas da função
-% pop - A populaçao de cromossomos com pais e filhos.
-
-% Saídas da função
-% pop - populaçao com os melhores valores de custo
+% SaÃ­das da funÃ§Ã£o
+% pop - populaÃ§ao com os melhores valores de custo
 
 %% inicio
 function pop = SortPopulation(pop, n_pop)
@@ -17,5 +14,6 @@ function pop = SortPopulation(pop, n_pop)
 [~, so] = sort([pop.Cost]);
 pop = pop(so);
 pop = pop(1:n_pop);
+
 
 end
