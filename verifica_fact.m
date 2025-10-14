@@ -1,19 +1,16 @@
 %% verifica_fact
 
-% Nome: Leonardo Verçosa de Oliveira Valle
-% Matricula: 15.1.8166
-
-% A função verifica se a solução da formiga é factivel e corrige a
+% A funÃ§Ã£o verifica se a soluÃ§Ã£o da formiga Ã© factivel e corrige a
 % estrategia infactivel.
 
-% Entradas da função
+% Entradas da funÃ§Ã£o
 % Formiga - vetor com uma estrategia de um veiculo para o problema
 % param - parametros do problema
 % Ereq - energia requerida do veiculo
 % estrategia_car - variavel para definir qual a necessidade do
 % veiculo, carregar, descarregar ou inerte.
 
-% Saídas da função
+% SaÃ­das da funÃ§Ã£o
 % formiga - retorna uma estrategia factivel para o veiculo.
 
 %% inicio
@@ -75,5 +72,6 @@ else
         aux = sum(Ant*rPEV);
     end
 end
+
 
 end
